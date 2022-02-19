@@ -1,5 +1,5 @@
 {
-  "name": "zoetic",
+  "name": "@zoetic/zoetic",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "git@github.com:kantord/zoetic.git",
