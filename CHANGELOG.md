@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/kantord/zoetic/compare/v1.1.0...v1.2.0) (2022-02-19)
+
+
+### Bug Fixes
+
+* fix white flash when changing slides ([65c023c](https://github.com/kantord/zoetic/commit/65c023c9d53aca7d9b18dc2d5020d6cc6c48ed50))
+
+
+### Features
+
+* support HD webcams ([63e40fa](https://github.com/kantord/zoetic/commit/63e40faf1547faebf52c5b4f359efd2eed6a71dd))
+
 # [1.1.0](https://github.com/kantord/zoetic/compare/v1.0.2...v1.1.0) (2022-02-19)
 
 
