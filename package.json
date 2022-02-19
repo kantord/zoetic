@@ -21,7 +21,6 @@
     "semantic-release": "^19.0.2"
   },
   "scripts": {
-    "develop": "gatsby develop",
     "start": "./cli.js hello.mdx",
     "build": "./cli.js build hello.mdx",
     "help": "./cli.js"
