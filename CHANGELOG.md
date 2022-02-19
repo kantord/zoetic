@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/kantord/zoetic/compare/v1.0.2...v1.1.0) (2022-02-19)
+
+
+### Features
+
+* display slides with webcam as background ([efc42a3](https://github.com/kantord/zoetic/commit/efc42a308a4951956bbd0b071021fbc4bf9fec78))
+* set up slides using mdx-deck ([c59a9cc](https://github.com/kantord/zoetic/commit/c59a9ccaa03292511e846517ff2e54ab5a9b3aa2))
+
 ## [1.0.2](https://github.com/kantord/zoetic/compare/v1.0.1...v1.0.2) (2022-02-19)
 
 
