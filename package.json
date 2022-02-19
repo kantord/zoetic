@@ -18,6 +18,10 @@
     "semantic-release": "^19.0.2"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "develop": "mdx-deck decks/hello.mdx"
+  },
+  "dependencies": {
+    "mdx-deck": "^4.1.1"
   }
 }
