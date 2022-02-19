@@ -5,6 +5,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "bin": {
+    "zoetic": "./cli.js"
+  },
   "repository": "git@github.com:kantord/zoetic.git",
   "author": "Dániel Kántor <git@daniel-kantor.com>",
   "description": "Markdown presentations using your webcam",
@@ -18,6 +21,15 @@
     "semantic-release": "^19.0.2"
   },
   "scripts": {
-    "prepare": "husky install"
+    "develop": "gatsby develop",
+    "start": "./cli.js hello.mdx",
+    "build": "./cli.js build hello.mdx",
+    "help": "./cli.js"
+  },
+  "dependencies": {
+    "gatsby": "2.32.13",
+    "gatsby-theme-mdx-deck": "^4.1.0",
+    "mdx-deck": "^4.1.1",
+    "react-webcam": "^6.0.1"
   }
 }
