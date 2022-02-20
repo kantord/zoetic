@@ -8,7 +8,7 @@ const fs = require('fs-extra')
 const pkg = require('./package.json')
 
 const log = (...args) => {
-  console.log(chalk.green('[mdx-deck]'), ...args)
+  console.log(chalk.green('[zoetic]'), ...args)
 }
 log.error = (...args) => {
   console.log(chalk.red('[err]'), ...args)
@@ -18,9 +18,9 @@ const cli = meow(
   `
   ${chalk.gray('Usage')}
 
-    $ ${chalk.green('mdx-deck deck.mdx')}
+    $ ${chalk.green('zoetic deck.mdx')}
 
-    $ ${chalk.green('mdx-deck build deck.mdx')}
+    $ ${chalk.green('zoetic build deck.mdx')}
 
   ${chalk.gray('Options')}
 
@@ -30,7 +30,7 @@ const cli = meow(
 
 `,
   {
-    description: chalk.green('@mdx-deck/lite ') + chalk.gray(pkg.description),
+    description: chalk.green('@zoetic/zoetic ') + chalk.gray(pkg.description),
     flags: {
       port: {
         type: 'string',
