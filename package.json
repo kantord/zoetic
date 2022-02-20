@@ -17,13 +17,17 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.9.0",
+    "eslint-plugin-react": "^7.28.0",
     "husky": "^7.0.4",
     "semantic-release": "^19.0.2"
   },
   "scripts": {
     "start": "./cli.js hello.mdx",
     "build": "./cli.js build hello.mdx",
-    "help": "./cli.js"
+    "help": "./cli.js",
+    "lint": "eslint ./src",
+    "format": "eslint ./src --fix"
   },
   "dependencies": {
     "gatsby": "2.32.13",
