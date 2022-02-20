@@ -19,6 +19,8 @@ jobs:
       - name: eslint
         run: yarn lint
   release:
+    needs:
+      - eslint
     name: Release to npm
     runs-on: ubuntu-latest
 
