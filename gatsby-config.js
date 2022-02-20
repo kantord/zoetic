@@ -1,7 +1,7 @@
 module.exports = {
-    plugins: [
-        {
-            resolve: 'gatsby-theme-mdx-deck',
-        },
-    ],
+  plugins: [
+    {
+      resolve: 'gatsby-theme-mdx-deck',
+    },
+  ],
 }
