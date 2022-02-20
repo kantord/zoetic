@@ -1,10 +1,23 @@
-name: Release to npm
+name: Checks and release
 
-on:
-  push:
-    branches: [main]
+on: [push]
 
 jobs:
+  eslint:
+      name: eslint
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Node setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Dependencies
+        run: yarn install --frozen-lockfile
+      - name: eslint
+        run: yarn lint
   release:
     name: Release to npm
     runs-on: ubuntu-latest
