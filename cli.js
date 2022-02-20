@@ -8,14 +8,14 @@ const fs = require('fs-extra')
 const pkg = require('./package.json')
 
 const log = (...args) => {
-  console.log(chalk.green('[mdx-deck]'), ...args)
+    console.log(chalk.green('[mdx-deck]'), ...args)
 }
 log.error = (...args) => {
-  console.log(chalk.red('[err]'), ...args)
+    console.log(chalk.red('[err]'), ...args)
 }
 
 const cli = meow(
-  `
+    `
   ${chalk.gray('Usage')}
 
     $ ${chalk.green('mdx-deck deck.mdx')}
@@ -29,26 +29,26 @@ const cli = meow(
       --no-open     Prevent from opening in default browser
 
 `,
-  {
-    description: chalk.green('@mdx-deck/lite ') + chalk.gray(pkg.description),
-    flags: {
-      port: {
-        type: 'string',
-        alias: 'p',
-        default: '8000',
-      },
-      host: {
-        type: 'string',
-        alias: 'h',
-        default: 'localhost',
-      },
-      open: {
-        type: 'boolean',
-        alias: 'o',
-        default: true,
-      },
-    },
-  }
+    {
+        description: chalk.green('@mdx-deck/lite ') + chalk.gray(pkg.description),
+        flags: {
+            port: {
+                type: 'string',
+                alias: 'p',
+                default: '8000',
+            },
+            host: {
+                type: 'string',
+                alias: 'h',
+                default: 'localhost',
+            },
+            open: {
+                type: 'boolean',
+                alias: 'o',
+                default: true,
+            },
+        },
+    }
 )
 
 const [cmd, file] = cli.input
@@ -60,39 +60,37 @@ process.env.__SRC__ = path.resolve(filename)
 
 const opts = Object.assign({}, cli.flags)
 
-let dev
-
 const gatsby = async (...args) => {
-  await execa('gatsby', ['clean'], {
-    cwd: __dirname,
-    stdio: 'inherit',
-    preferLocal: true,
-  })
-  return execa('gatsby', args.filter(Boolean), {
-    cwd: __dirname,
-    stdio: 'inherit',
-    preferLocal: true,
-  })
+    await execa('gatsby', ['clean'], {
+        cwd: __dirname,
+        stdio: 'inherit',
+        preferLocal: true,
+    })
+    return execa('gatsby', args.filter(Boolean), {
+        cwd: __dirname,
+        stdio: 'inherit',
+        preferLocal: true,
+    })
 }
 
 switch (cmd) {
-  case 'build':
+case 'build':
     gatsby('build').then(() => {
-      const public = path.join(__dirname, 'public')
-      const dist = path.join(process.cwd(), 'public')
-      if (public === dist) return
-      fs.copySync(public, dist)
+        const public_ = path.join(__dirname, 'public')
+        const dist = path.join(process.cwd(), 'public')
+        if (public_ === dist) return
+        fs.copySync(public_, dist)
     })
     break
-  case 'dev':
-  default:
+case 'dev':
+default:
     gatsby(
-      'develop',
-      '--host',
-      opts.host,
-      '--port',
-      opts.port,
-      opts.open && '--open'
+        'develop',
+        '--host',
+        opts.host,
+        '--port',
+        opts.port,
+        opts.open && '--open'
     )
     break
 }

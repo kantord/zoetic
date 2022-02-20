@@ -26,8 +26,8 @@
     "start": "./cli.js hello.mdx",
     "build": "./cli.js build hello.mdx",
     "help": "./cli.js",
-    "lint": "eslint ./src",
-    "format": "eslint ./src --fix"
+    "lint": "eslint .",
+    "format": "eslint . --fix"
   },
   "dependencies": {
     "gatsby": "2.32.13",
