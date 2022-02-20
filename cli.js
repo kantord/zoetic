@@ -60,8 +60,6 @@ process.env.__SRC__ = path.resolve(filename)
 
 const opts = Object.assign({}, cli.flags)
 
-let dev
-
 const gatsby = async (...args) => {
   await execa('gatsby', ['clean'], {
     cwd: __dirname,
@@ -78,10 +76,10 @@ const gatsby = async (...args) => {
 switch (cmd) {
   case 'build':
     gatsby('build').then(() => {
-      const public = path.join(__dirname, 'public')
+      const public_ = path.join(__dirname, 'public')
       const dist = path.join(process.cwd(), 'public')
-      if (public === dist) return
-      fs.copySync(public, dist)
+      if (public_ === dist) return
+      fs.copySync(public_, dist)
     })
     break
   case 'dev':

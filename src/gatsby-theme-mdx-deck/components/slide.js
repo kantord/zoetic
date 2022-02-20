@@ -5,8 +5,7 @@ import useSwipe from 'gatsby-theme-mdx-deck/src/hooks/use-swipe'
 import Context from 'gatsby-theme-mdx-deck/src/context'
 import { modes } from 'gatsby-theme-mdx-deck/src/constants'
 
-
-export const Slide = ({ slide, index, preview, ...props }) => {
+export const Slide = ({ slide, index, preview }) => {
   const { theme } = useThemeUI()
   const outer = useDeck()
   const swipeProps = useSwipe()
@@ -21,7 +20,7 @@ export const Slide = ({ slide, index, preview, ...props }) => {
       <div
         style={{
           textShadow: `0 0 16px ${theme.colors.background}`,
-          background: "transparent",
+          background: 'transparent',
         }}
         {...(!preview ? swipeProps : {})}
         sx={{
@@ -36,7 +35,8 @@ export const Slide = ({ slide, index, preview, ...props }) => {
           position: 'relative',
           color: 'text',
           variant: 'styles.Slide',
-        }}>
+        }}
+      >
         {slide}
       </div>
     </Context.Provider>

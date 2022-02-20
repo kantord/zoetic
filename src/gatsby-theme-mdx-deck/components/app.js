@@ -1,7 +1,7 @@
 // Original source: https://github.com/jxnblk/mdx-deck/blob/master/packages/gatsby-theme/src/components/app.js
 import React, { useReducer } from 'react'
 import merge from 'lodash.merge'
-import Webcam from "react-webcam";
+import Webcam from 'react-webcam'
 import Context from 'gatsby-theme-mdx-deck/src/context'
 import { modes } from 'gatsby-theme-mdx-deck/src/constants'
 
@@ -9,8 +9,8 @@ const WebcamAsBackground = () => {
   const videoConstraints = {
     width: { min: 640, ideal: 1920, max: 1920 },
     height: { min: 400, ideal: 1080, max: 1080 },
-    facingMode: "user"
-  };
+    facingMode: 'user',
+  }
 
   return (
     <Webcam
@@ -19,7 +19,7 @@ const WebcamAsBackground = () => {
         width: '100%',
         height: '100%',
         position: 'fixed',
-        objectFit: "cover",
+        objectFit: 'cover',
         top: 0,
         left: 0,
         right: 0,
@@ -35,7 +35,7 @@ const reducer = (state, next) =>
     ? merge({}, state, next(state))
     : merge({}, state, next)
 
-export default props => {
+const App = (props) => {
   const [state, setState] = useReducer(reducer, {
     mode: modes.normal,
     step: 0,
@@ -59,8 +59,12 @@ export default props => {
     register,
   }
 
-  return <>
-    <WebcamAsBackground />
-    <Context.Provider value={context}>{props.children}</Context.Provider>
-  </>
+  return (
+    <>
+      <WebcamAsBackground />
+      <Context.Provider value={context}>{props.children}</Context.Provider>
+    </>
+  )
 }
+
+export default App
