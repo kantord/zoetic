@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/kantord/zoetic/compare/v1.2.0...v1.3.0) (2022-02-20)
+
+
+### Features
+
+* use text shadow to make text easier to read ([af128fa](https://github.com/kantord/zoetic/commit/af128fa17e2c40039497a6d703eadc269b94b6d1))
+
 # [1.2.0](https://github.com/kantord/zoetic/compare/v1.1.0...v1.2.0) (2022-02-19)
 
 
