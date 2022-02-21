@@ -33,9 +33,14 @@
     "format": "eslint . --fix"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.4.2",
+    "@mui/material": "^5.4.3",
     "gatsby": "2.32.13",
     "gatsby-theme-mdx-deck": "^4.1.0",
     "mdx-deck": "^4.1.1",
-    "react-webcam": "^6.0.1"
+    "react-webcam": "^6.0.1",
+    "use-persisted-state": "^0.3.3"
   }
 }
