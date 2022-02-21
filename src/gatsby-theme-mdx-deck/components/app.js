@@ -14,6 +14,7 @@ const WebcamAsBackground = () => {
 
   return (
     <Webcam
+      mirrored={true}
       videoConstraints={videoConstraints}
       style={{
         width: '100%',
