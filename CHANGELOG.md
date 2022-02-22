@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/kantord/zoetic/compare/v1.3.0...v1.3.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* compile mdx-deck ([3384a27](https://github.com/kantord/zoetic/commit/3384a2794b90da301d233aa2426fe62aeedb0971)), closes [#9](https://github.com/kantord/zoetic/issues/9)
+
 # [1.3.0](https://github.com/kantord/zoetic/compare/v1.2.0...v1.3.0) (2022-02-20)
 
 
