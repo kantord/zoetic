@@ -39,6 +39,7 @@
     "@mui/material": "^5.4.3",
     "gatsby": "2.32.13",
     "gatsby-theme-mdx-deck": "^4.1.0",
+    "mdx-code": "2.0.0",
     "mdx-deck": "^4.1.1",
     "react-webcam": "^6.0.1",
     "use-persisted-state": "^0.3.3"
