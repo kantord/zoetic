@@ -37,10 +37,22 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.3",
-    "gatsby": "2.32.13",
     "gatsby-theme-mdx-deck": "^4.1.0",
+    "mdx-code": "2.0.0",
     "mdx-deck": "^4.1.1",
     "react-webcam": "^6.0.1",
-    "use-persisted-state": "^0.3.3"
+    "use-persisted-state": "^0.3.3",
+    "@mdx-deck/gatsby-plugin": "^4.1.1",
+    "@mdx-deck/themes": "^4.1.0",
+    "chalk": "^3.0.0",
+    "execa": "^4.0.0",
+    "fs-extra": "^8.1.0",
+    "gatsby": "^2.13.24",
+    "gatsby-plugin-compile-es6-packages": "^2.0.0",
+    "gatsby-source-filesystem": "^2.1.48",
+    "initit": "^1.0.0-2",
+    "meow": "^6.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
