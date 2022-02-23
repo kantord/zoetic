@@ -1,3 +1,15 @@
+## [1.3.2](https://github.com/kantord/zoetic/compare/v1.3.1...v1.3.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* add some missing dependencies ([47534ce](https://github.com/kantord/zoetic/commit/47534ce43615482d3be3aa48590f79457da4da51))
+
+
+### Reverts
+
+* revert "Allow usage from the command line ([#9](https://github.com/kantord/zoetic/issues/9))" ([9242bbb](https://github.com/kantord/zoetic/commit/9242bbb7b4205842cd07c325db784989c24ab953))
+
 ## [1.3.1](https://github.com/kantord/zoetic/compare/v1.3.0...v1.3.1) (2022-02-22)
 
 
