@@ -1,11 +1,21 @@
-import logo from './logo.svg'
-import './App.css'
+import { useState } from 'react'
+
+function useSlidesData() {
+  const [slidesData, setSlidesData] = useState(null)
+  fetch('/slides_data')
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+
+  return { slidesData, setSlidesData }
+}
 
 function App() {
+  const slidesData = useSlidesData()
+  console.log(slidesData)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
