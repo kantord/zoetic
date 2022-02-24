@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/kantord/zoetic/compare/v1.3.2...v1.3.3) (2022-02-24)
+
+
+### Bug Fixes
+
+* add missing babel config ([#13](https://github.com/kantord/zoetic/issues/13)) ([151e39e](https://github.com/kantord/zoetic/commit/151e39ea508c18b43542cdc915fd29a801455446))
+
 ## [1.3.2](https://github.com/kantord/zoetic/compare/v1.3.1...v1.3.2) (2022-02-23)
 
 
