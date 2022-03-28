@@ -1,5 +1,7 @@
-# zoetic
-🌱 🎥 Markdown presentations using your webcam
+<div align="center">
+	<h1>🌱 🎥 zoetic</h1>
+	<p>Markdown presentations using your webcam</p>
+</div>
 
 
 ## Usage
