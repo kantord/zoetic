@@ -6,6 +6,10 @@
 
 ## Usage
 
+Zoetic is built using [mdx-deck](https://github.com/jxnblk/mdx-deck), therefore 
+it's compatible with your existing mdx-deck presentations.
+It should be compatible with other mdx or vanilla Markdown presentations as well.
+
 
 ### Setup
 
