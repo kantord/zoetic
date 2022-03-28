@@ -6,7 +6,7 @@
     "access": "public"
   },
   "bin": {
-    "zoetic": "./cli.js"
+    "zoetic": "./generate.js"
   },
   "repository": "git@github.com:kantord/zoetic.git",
   "author": "Dániel Kántor <git@daniel-kantor.com>",
@@ -28,6 +28,7 @@
   "scripts": {
     "start": "./cli.js hello.mdx",
     "build": "./cli.js build hello.mdx",
+    "zoetic": "./cli.js",
     "help": "./cli.js",
     "lint": "eslint .",
     "format": "eslint . --fix"
