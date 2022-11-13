@@ -3,6 +3,9 @@
 	<p>Markdown presentations using your webcam</p>
 </div>
 
+<div align="center">
+  <img src="demo.gif" />
+</div>
 
 ## Usage
 
